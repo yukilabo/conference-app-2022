@@ -71,7 +71,7 @@ fun SessionListItem(
                         drawable.ic_bookmark
                     }
                 ),
-                contentDescription = "bookmark icon",
+                contentDescription = if (isFavorited) "favorite" else "not favorite",
             )
         }
     }
